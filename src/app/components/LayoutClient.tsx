@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { Home, Settings, Plus } from "lucide-react";
@@ -13,6 +13,19 @@ export default function LayoutClient({
 }) {
   const pathname = usePathname();
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && "serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("/sw.js")
+        .then((registration) => {
+          console.log("Service worker registered:", registration.scope);
+        })
+        .catch((error) => {
+          console.error("Service worker registration failed:", error);
+        });
+    }
+  }, []);
 
   const navItems = [
     { path: "/", label: "Home", icon: Home },
