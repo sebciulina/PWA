@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap');
+
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: linear-gradient(180deg, #F0F7FF 0%, #FFFFFF 100%);
+  --foreground: #1A2332;
+  --card: #FFFFFF;
+  --card-foreground: #1A2332;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A2332;
+  --primary: #42A5F5;
+  --primary-foreground: #FFFFFF;
+  --secondary: #E3F2FD;
+  --secondary-foreground: #1A2332;
+  --muted: #F5F5F5;
+  --muted-foreground: #64748B;
+  --accent: #90CAF9;
+  --accent-foreground: #FFFFFF;
+  --destructive: #EF5350;
+  --destructive-foreground: #FFFFFF;
+  --border: rgba(66, 165, 245, 0.12);
+  --input: #F8FBFF;
+  --ring: #42A5F5;
+  --radius: 0.75rem;
+}
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+}
