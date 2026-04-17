@@ -108,7 +108,7 @@ Learn more: [Next.js Deployment Documentation](https://nextjs.org/docs/app/build
 ## 🔗 Links
 
 - 📖 [GitHub Repository](https://github.com/sebciulina/PWA)
-- 🚀 [Live Demo](https://pwa-task-manager.vercel.app)
+- 🚀 [Live Demo](https://pwa-i35gbh1f8-sebciulinas-projects.vercel.app)
 - 📚 [Next.js Docs](https://nextjs.org/docs)
 
 ## 👤 Author
